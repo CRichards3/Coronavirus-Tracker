@@ -1,4 +1,5 @@
 # Coronavirus-Tracker
+<<<<<<< HEAD
 
 Displays stats about Covid-19
 
@@ -70,3 +71,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+Displays stats about Covid-19
+>>>>>>> d6371b45968d8632975a7c71d16d9ef8f469cd50

@@ -19,7 +19,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.infected)}
         >
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="initial" gutterBottom>
               Infected
             </Typography>
             <Typography variant="h5" gutterBottom>
@@ -30,7 +30,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 separator=","
               />
             </Typography>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="initial" gutterBottom>
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2" gutterBottom>
@@ -46,7 +46,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.recovered)}
         >
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="initial" gutterBottom>
               Recovered
             </Typography>
             <Typography variant="h5" gutterBottom>
@@ -57,7 +57,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 separator=","
               />
             </Typography>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="initial" gutterBottom>
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2" gutterBottom>
@@ -73,7 +73,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
           className={cx(styles.card, styles.deaths)}
         >
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="initial" gutterBottom>
               Deaths
             </Typography>
             <Typography variant="h5" gutterBottom>
@@ -84,7 +84,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                 separator=","
               />
             </Typography>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="initial" gutterBottom>
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2" gutterBottom>

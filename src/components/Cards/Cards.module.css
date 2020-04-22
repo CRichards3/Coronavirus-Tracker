@@ -4,6 +4,8 @@
 
 .card {
   margin: 0 2% !important;
+  background-color: rgb(15, 15, 15) !important;
+  color: rgb(250, 250, 250) !important;
 }
 
 .infected {

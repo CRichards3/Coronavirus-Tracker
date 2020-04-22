@@ -35,6 +35,50 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           }
         ]
       }}
+      options={{
+        scales: {
+          xAxes: [
+            {
+              gridLines: {
+                color: "rgba(220,220,220, 0.2)"
+              },
+              ticks: {
+                fontColor: "white",
+                fontSize: 13
+              }
+            }
+          ],
+          yAxes: [
+            {
+              gridLines: {
+                color: "rgba(220,220,220, 0.2)"
+              },
+              ticks: {
+                fontColor: "white",
+                fontSize: 15,
+                callback: function(value, index, values) {
+                  return value.toLocaleString();
+                }
+              },
+              scaleLabel: {
+                display: true,
+                labelString: "# of People",
+                fontColor: "white",
+                fontSize: 20
+              }
+            }
+          ]
+        },
+        legend: {
+          display: false
+        },
+        title: {
+          display: true,
+          fontColor: "white",
+          text: "Global COVID-19 Cases",
+          fontSize: 30
+        }
+      }}
     />
   ) : null;
 
@@ -46,17 +90,57 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           {
             label: "People",
             backgroundColor: [
-              "rgba(0, 0, 255, 0.5)",
-              "rgba(0, 255, 0, 0.5)",
-              "rgba(255, 0, 0, 0.5)"
+              "rgba(0, 0, 255, 0.7)",
+              "rgba(0, 255, 0, 0.7)",
+              "rgba(255, 0, 0, 0.7)"
             ],
             data: [confirmed.value, recovered.value, deaths.value]
           }
         ]
       }}
       options={{
-        legend: { display: false },
-        title: { display: true, text: `Current state in ${country}` }
+        scales: {
+          xAxes: [
+            {
+              gridLines: {
+                color: "rgba(220,220,220, 0.2)"
+              },
+              ticks: {
+                fontColor: "white",
+                fontSize: 20
+              }
+            }
+          ],
+          yAxes: [
+            {
+              gridLines: {
+                color: "rgba(220,220,220, 0.2)"
+              },
+              ticks: {
+                fontColor: "white",
+                fontSize: 15,
+                callback: function(value, index, values) {
+                  return value.toLocaleString();
+                }
+              },
+              scaleLabel: {
+                display: true,
+                labelString: "# of People",
+                fontColor: "white",
+                fontSize: 20
+              }
+            }
+          ]
+        },
+        legend: {
+          display: false
+        },
+        title: {
+          display: true,
+          fontColor: "white",
+          text: `${country} COVID-19 Cases`,
+          fontSize: 30
+        }
       }}
     />
   ) : null;

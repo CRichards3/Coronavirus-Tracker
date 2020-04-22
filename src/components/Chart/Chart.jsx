@@ -18,16 +18,16 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
   const lineChart = dailyData.length ? (
     <Line
       data={{
-        labels: dailyData.map(({ date }) => date),
+        labels: dailyData.map(({ date }) => date).slice(-30, -1),
         datasets: [
           {
-            data: dailyData.map(({ confirmed }) => confirmed),
+            data: dailyData.map(({ confirmed }) => confirmed).slice(-30, -1),
             label: "Infected",
             borderColor: "#3333ff",
             fill: true
           },
           {
-            data: dailyData.map(({ deaths }) => deaths),
+            data: dailyData.map(({ deaths }) => deaths).slice(-30, -1),
             label: "Deaths",
             borderColor: "red",
             backgroundColor: "rgba(255,0,0,0.5)",

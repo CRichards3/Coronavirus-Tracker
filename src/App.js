@@ -22,6 +22,7 @@ class App extends React.Component {
     //fetch data, then set state
     const fetchedData = await fetchData(country);
     this.setState({ data: fetchedData, country: country });
+    console.log(this.state.country);
   };
 
   render() {
@@ -29,8 +30,8 @@ class App extends React.Component {
     return (
       <div className={styles.container}>
         <img className={styles.image} alt="Covid19" src={coronaImg} />
-        <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
+        <Cards data={data} />
         <Chart data={data} country={country} />
       </div>
     );

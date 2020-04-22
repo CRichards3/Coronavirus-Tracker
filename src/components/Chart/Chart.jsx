@@ -40,7 +40,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           xAxes: [
             {
               gridLines: {
-                color: "rgba(220,220,220, 0.2)"
+                color: "rgba(255,255,255, .6)"
               },
               ticks: {
                 fontColor: "white",
@@ -51,7 +51,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           yAxes: [
             {
               gridLines: {
-                color: "rgba(220,220,220, 0.2)"
+                color: "rgba(255,255,255, .6)"
               },
               ticks: {
                 fontColor: "white",
@@ -90,9 +90,9 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           {
             label: "People",
             backgroundColor: [
-              "rgba(0, 0, 255, 0.7)",
-              "rgba(0, 255, 0, 0.7)",
-              "rgba(255, 0, 0, 0.7)"
+              "rgba(0, 0, 255, .9)",
+              "rgba(0, 255, 0, .9)",
+              "rgba(255, 0, 0, .9)"
             ],
             data: [confirmed.value, recovered.value, deaths.value]
           }
@@ -103,7 +103,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           xAxes: [
             {
               gridLines: {
-                color: "rgba(220,220,220, 0.2)"
+                color: "rgba(255,255,255, 1)"
               },
               ticks: {
                 fontColor: "white",
@@ -114,7 +114,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           yAxes: [
             {
               gridLines: {
-                color: "rgba(220,220,220, 0.2)"
+                color: "rgba(255,255,255, .6)"
               },
               ticks: {
                 fontColor: "white",

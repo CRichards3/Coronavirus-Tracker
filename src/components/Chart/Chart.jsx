@@ -43,6 +43,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
                 color: "rgba(255,255,255, .6)"
               },
               ticks: {
+                maxTicksLimit: 12,
                 fontColor: "white",
                 fontSize: 13
               }
@@ -54,6 +55,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
                 color: "rgba(255,255,255, .6)"
               },
               ticks: {
+                maxTicksLimit: 5,
                 fontColor: "white",
                 fontSize: 15,
                 callback: function(value, index, values) {
@@ -62,7 +64,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
               },
               scaleLabel: {
                 display: true,
-                labelString: "# of People",
+                labelString: "Cases",
                 fontColor: "white",
                 fontSize: 15
               }

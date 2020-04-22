@@ -128,7 +128,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
               },
               scaleLabel: {
                 display: true,
-                labelString: "# of People",
+                labelString: "Cases",
                 fontColor: "white",
                 fontSize: 20
               }

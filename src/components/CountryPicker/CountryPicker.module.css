@@ -1,14 +1,15 @@
 .formControl {
   width: 30%;
   margin-top: 25px !important;
-  background-color: rgb(15, 15, 15) !important;
+  color: white !important;
 }
 
 .select {
   color: white !important;
-  background-color: rgb(15, 15, 15) !important;
+  background-color: rgb(47, 47, 47) !important;
 }
 
 .optionC {
-  background-color: rgb(15, 15, 15) !important;
+  background-color: rgb(42, 42, 42) !important;
+  color: white !important;
 }

@@ -1,0 +1,20 @@
+import React from "react";
+import { Typography } from "@material-ui/core";
+
+import styles from "./Footer.module.css";
+
+const Footer = () => {
+  return (
+    <div className={styles.main}>
+      <Typography variant="body2" color="primary">
+        Link to COVID-19 data source: https://github.com/mathdroid/covid-19-api
+      </Typography>
+      <Typography variant="body2" color="primary">
+        JavaScript Mastery's Youtube:
+        https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A
+      </Typography>
+    </div>
+  );
+};
+
+export default Footer;

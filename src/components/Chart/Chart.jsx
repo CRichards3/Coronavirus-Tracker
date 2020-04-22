@@ -64,7 +64,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
                 display: true,
                 labelString: "# of People",
                 fontColor: "white",
-                fontSize: 20
+                fontSize: 15
               }
             }
           ]
@@ -118,7 +118,8 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
               },
               ticks: {
                 fontColor: "white",
-                fontSize: 15,
+                fontSize: 13,
+                maxTicksLimit: 5,
                 callback: function(value, index, values) {
                   return value.toLocaleString();
                 }

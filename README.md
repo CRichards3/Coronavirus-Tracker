@@ -1,6 +1,10 @@
 # Coronavirus-Tracker
 
-Displays stats about Covid-19
+Displays stats about Covid-19!
+
+Special thanks to JavaScript Mastery on Youtube for the awesome tutorial: https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A
+
+COVID-19 information source: https://github.com/mathdroid/covid-19-api
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

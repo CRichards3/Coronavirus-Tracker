@@ -1,8 +1,8 @@
 import React from "react";
-import Cards from "./components/Cards/Cards";
 import Chart from "./components/Chart/Chart";
 import CountryPicker from "./components/CountryPicker/CountryPicker";
 import Footer from "./components/Footer/Footer";
+import MiddleSection from "./components/MiddleSection/MiddleSection";
 
 import { fetchData } from "./api";
 import coronaImg from "./images/covid19.png";
@@ -33,7 +33,7 @@ class App extends React.Component {
       <div className={styles.container}>
         <img className={styles.image} alt="Covid19" src={coronaImg} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Cards data={data} />
+        <MiddleSection data={data} />
         <Chart data={data} country={country} />
         <Footer />
       </div>
